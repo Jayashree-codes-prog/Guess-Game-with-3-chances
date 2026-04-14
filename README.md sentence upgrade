@@ -6,15 +6,15 @@ secret = random.randint(1, 10)
 chances = 3
 
 while chances > 0:
-    guess = int(input("1 theke 10 er moddhe number guess koro: "))
+    guess = int(input("guess within 1  to 10: "))
 
     if guess == secret:
-        print("Wow! Tumi thik guess korecho 🎉")
+        print("Wow!you are right 🎉")
         break
     else:
         chances = chances - 1
         if chances > 0:
-            print("Wrong guess! Aro", chances, "chance ache.")
+            print("Wrong guess! more ", chances, "chance have.")
         else:
             print("Game Over 😢")
-            print("Correct number chilo:", secret)
+            print("Correct number was:", secret)
